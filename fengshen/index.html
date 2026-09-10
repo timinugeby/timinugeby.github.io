@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>封神三部曲-电影系列剧情解析、角色介绍与观影指南</title>
+<meta name="description" content="封神三部曲是中国神话史诗电影系列，本文梳理三部曲的剧情脉络、主要角色、世界观设定与观影顺序，帮助观众了解封神三部曲讲了什么、怎么看、有哪些看点。">
+<meta name="keywords" content="封神三部曲,封神电影,封神第一部,封神第二部,封神第三部,封神演义改编,神话史诗电影">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#1a1614;
+  --ink-2:#3d3530;
+  --muted:#7a6f68;
+  --line:#e3ddd6;
+  --bg:#f7f4f0;
+  --card:#ffffff;
+  --gold:#b8863b;
+  --gold-2:#d9a94e;
+  --red:#8f2b22;
+  --red-soft:#b8453a;
+  --dark:#221c19;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Songti SC","STSong","Noto Serif SC",Georgia,"Microsoft YaHei",serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.85;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92%);margin:0 auto}
+
+/* ---------- header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(34,28,25,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(184,134,59,.35);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;padding:14px 0;
+}
+.brand{display:flex;align-items:center;gap:12px;color:#f3ece2}
+.brand-mark{
+  width:42px;height:42px;flex:0 0 42px;
+  border:1px solid var(--gold);
+  border-radius:50%;
+  display:grid;place-items:center;
+  font-size:19px;color:var(--gold-2);
+  font-weight:700;
+  letter-spacing:-1px;
+}
+.brand-text b{display:block;font-size:18px;letter-spacing:3px;font-weight:700}
+.brand-text span{display:block;font-size:11px;letter-spacing:2px;color:#a99a8c;font-family:system-ui,sans-serif}
+.main-nav{display:flex;gap:28px;font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:14px}
+.main-nav a{color:#cdbfb2;padding:4px 0;border-bottom:1px solid transparent;transition:.25s}
+.main-nav a:hover{color:var(--gold-2);border-bottom-color:var(--gold-2)}
+.header-cta{
+  font-family:system-ui,"Microsoft YaHei",sans-serif;
+  font-size:13px;color:#221c19;
+  background:linear-gradient(135deg,var(--gold-2),var(--gold));
+  padding:9px 18px;border-radius:2px;letter-spacing:1px;
+  white-space:nowrap;
+}
+.header-cta:hover{filter:brightness(1.08)}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;
+  background:
+    radial-gradient(1200px 520px at 78% -10%,rgba(184,134,59,.30),transparent 62%),
+    radial-gradient(900px 480px at 8% 110%,rgba(143,43,34,.34),transparent 60%),
+    linear-gradient(160deg,#1d1815 0%,#2b231e 46%,#171310 100%);
+  color:#f2eae0;
+  overflow:hidden;
+  border-bottom:1px solid rgba(184,134,59,.3);
+}
+.hero::after{
+  content:"";
+  position:absolute;inset:0;
+  background-image:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.028) 0 1px,transparent 1px 4px);
+  pointer-events:none;
+}
+.hero-inner{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1.35fr .9fr;
+  gap:52px;align-items:center;
+  padding:74px 0 78px;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:system-ui,"Microsoft YaHei",sans-serif;
+  font-size:12px;letter-spacing:3px;color:var(--gold-2);
+  border:1px solid rgba(184,134,59,.55);
+  padding:6px 14px;border-radius:2px;margin-bottom:22px;
+}
+.hero h1{
+  font-size:clamp(34px,5.4vw,58px);
+  line-height:1.18;letter-spacing:4px;font-weight:700;
+  margin-bottom:20px;
+}
+.hero h1 em{
+  font-style:normal;color:var(--gold-2);
+  display:inline-block;
+}
+.hero-lead{
+  font-size:16.5px;color:#cbbcb0;max-width:640px;margin-bottom:14px;
+}
+.hero-lead strong{color:#f3e7d6;font-weight:700}
+.hero-points{
+  display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 30px;
+  font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:13px;
+}
+.hero-points span{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  color:#d7c9bb;padding:6px 13px;border-radius:2px;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.btn{
+  display:inline-block;padding:13px 28px;border-radius:2px;
+  font-family:system-ui,"Microsoft YaHei",sans-serif;
+  font-size:14.5px;letter-spacing:1.5px;transition:.25s;
+}
+.btn-gold{background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#221c19;font-weight:600}
+.btn-gold:hover{filter:brightness(1.09);transform:translateY(-1px)}
+.btn-ghost{border:1px solid rgba(217,169,78,.55);color:#e6d6bf}
+.btn-ghost:hover{background:rgba(217,169,78,.12)}
+
+/* hero side panel */
+.hero-panel{
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(184,134,59,.35);
+  border-radius:3px;padding:26px 24px;
+}
+.hero-panel h2{
+  font-size:15px;letter-spacing:3px;color:var(--gold-2);
+  font-weight:700;margin-bottom:18px;
+  padding-bottom:12px;border-bottom:1px solid rgba(184,134,59,.28);
+}
+.trilogy-list{list-style:none;display:grid;gap:14px}
+.trilogy-list li{
+  display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;
+}
+.tl-num{
+  font-family:system-ui,sans-serif;font-size:13px;
+  color:#221c19;background:var(--gold-2);
+  width:44px;height:44px;border-radius:2px;
+  display:grid;place-items:center;font-weight:700;letter-spacing:1px;
+}
+.tl-body b{display:block;color:#f2e8db;font-size:15.5px;letter-spacing:1px}
+.tl-body span{display:block;color:#a99a8c;font-size:13px;font-family:system-ui,"Microsoft YaHei",sans-serif;line-height:1.7}
+
+/* ---------- 通用 section ---------- */
+.section{padding:66px 0}
+.section-alt{background:#fff}
+.section-head{margin-bottom:38px;max-width:820px}
+.section-kicker{
+  font-family:system-ui,"Microsoft YaHei",sans-serif;
+  font-size:12px;letter-spacing:4px;color:var(--gold);
+  margin-bottom:12px;
+}
+.section-head h2{
+  font-size:clamp(24px,3.3vw,32px);letter-spacing:2px;font-weight:700;
+  color:var(--ink);margin-bottom:14px;
+}
+.section-head h2::after{
+  content:"";display:block;width:56px;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--red-soft));
+  margin-top:16px;
+}
+.section-head p{color:var(--muted);font-size:15.5px}
+
+/* ---------- 剧情脉络 ---------- */
+.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.story-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-top:3px solid var(--gold);
+  border-radius:3px;padding:28px 26px;
+  display:flex;flex-direction:column;
+  transition:.3s;
+}
+.story-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px -20px rgba(34,28,25,.4)}
+.story-card .part{
+  font-family:system-ui,"Microsoft YaHei",sans-serif;
+  font-size:12px;letter-spacing:3px;color:var(--red);margin-bottom:10px;
+}
+.story-card h3{font-size:20px;letter-spacing:1.5px;margin-bottom:14px}
+.story-card p{font-size:14.5px;color:var(--ink-2);margin-bottom:16px}
+.story-card ul{
+  list-style:none;margin-top:auto;
+  border-top:1px dashed var(--line);padding-top:16px;
+  font-size:13.5px;color:var(--muted);
+  font-family:system-ui,"Microsoft YaHei",sans-serif;
+  display:grid;gap:8px;
+}
+.story-card ul li::before{content:"— ";color:var(--gold)}
+
+/* ---------- 角色 ---------- */
+.role-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.role-card{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:3px;padding:24px 22px;position:relative;
+  overflow:hidden;
+}
+.role-card::before{
+  content:"";position:absolute;top:0;right:0;
+  width:56px;height:56px;
+  background:linear-gradient(225deg,rgba(184,134,59,.16),transparent 70%);
+}
+.role-card h3{font-size:18px;letter-spacing:2px;margin-bottom:4px}
+.role-card .role-sub{
+  font-family:system-ui,"Microsoft YaHei",sans-serif;
+  font-size:12px;color:var(--gold);letter-spacing:2px;margin-bottom:12px;
+}
+.role-card p{font-size:14px;color:var(--ink-2)}
+.role-card .role-key{
+  margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);
+  font-size:12.5px;color:var(--muted);
+  font-family:system-ui,"Microsoft YaHei",sans-serif;
+}
+
+/* ---------- 世界观 双栏 ---------- */
+.world-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:start}
+.world-text p{margin-bottom:16px;font-size:15.5px;color:var(--ink-2)}
+.world-text p strong{color:var(--red);font-weight:700}
+.concept-list{list-style:none;display:grid;gap:16px;margin-top:8px}
+.concept-list li{
+  background:var(--card);border:1px solid var(--line);
+  border-left:3px solid var(--red-soft);
+  padding:16px 20px;border-radius:2px;
+}
+.concept-list b{display:block;font-size:15.5px;letter-spacing:1px;margin-bottom:5px}
+.concept-list span{font-size:14px;color:var(--muted);font-family:system-ui,"Microsoft YaHei",sans-serif;line-height:1.75}
+
+/* ---------- 观影指南 步骤 ---------- */
+.steps{display:grid;gap:0;border-top:1px solid var(--line)}
+.step{
+  display:grid;grid-template-columns:88px 1fr;gap:26px;
+  padding:26px 0;border-bottom:1px solid var(--line);
+  align-items:start;
+}
+.step-num{
+  font-family:system-ui,sans-serif;font-size:30px;font-weight:700;
+  color:var(--line);line-height:1;
+}
+.step h3{font-size:17.5px;letter-spacing:1px;margin-bottom:8px}
+.step p{font-size:14.5px;color:var(--ink-2)}
+.step .tip{
+  display:inline-block;margin-top:10px;
+  font-family:system-ui,"Microsoft YaHei",sans-serif;
+  font-size:12.5px;color:var(--red);
+  background:rgba(143,43,34,.07);
+  border:1px solid rgba(143,43,34,.18);
+  padding:3px 11px;border-radius:2px;
+}
+
+/* ---------- FAQ ---------- */
+.faq{display:grid;gap:14px;max-width:900px}
+.faq details{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:3px;padding:0 22px;
+}
+.faq summary{
+  cursor:pointer;list-style:none;
+  padding:19px 0;font-size:16px;font-weight:700;letter-spacing:.5px;
+  display:flex;justify-content:space-between;gap:16px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";font-family:system-ui,sans-serif;
+  color:var(--gold);font-size:22px;font-weight:400;flex:0 0 auto;
+  transition:.25s;
+}
+.faq details[open] summary::after{content:"–"}
+.faq details[open] summary{color:var(--red)}
+.faq .faq-body{
+  padding:0 0 22px;font-size:14.5px;color:var(--ink-2);
+  border-top:1px dashed var(--line);padding-top:16px;
+}
+
+/* ---------- 相关延伸 ---------- */
+.related{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.related-card{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:3px;padding:24px;display:block;transition:.28s;
+}
+.related-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.related-card h3{font-size:16.5px;letter-spacing:1px;margin-bottom:10px}
+.related-card p{font-size:14px;color:var(--muted);font-family:system-ui,"Microsoft YaHei",sans-serif;line-height:1.75}
+.related-card .more{
+  display:inline-block;margin-top:14px;font-size:13px;
+  color:var(--gold);font-family:system-ui,"Microsoft YaHei",sans-serif;
+  letter-spacing:1px;
+}
+
+/* ---------- footer ---------- */
+.site-footer{
+  background:var(--dark);color:#9c8f84;
+  padding:52px 0 26px;font-family:system-ui,"Microsoft YaHei",sans-serif;
+  font-size:13.5px;
+  border-top:3px solid var(--gold);
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;
+  padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.08);
+}
+.footer-brand b{display:block;color:#f0e6d8;font-size:17px;letter-spacing:3px;margin-bottom:12px}
+.footer-brand p{line-height:1.85;color:#8a7d72}
+.footer-col h4{
+  color:#e2d5c4;font-size:13.5px;letter-spacing:2px;
+  margin-bottom:14px;font-weight:700;
+}
+.footer-col ul{list-style:none;display:grid;gap:9px}
+.footer-col a{color:#96897d;transition:.2s}
+.footer-col a:hover{color:var(--gold-2)}
+.footer-bottom{
+  padding-top:22px;display:flex;justify-content:space-between;
+  gap:18px;flex-wrap:wrap;color:#6f6459;font-size:12.5px;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:40px;padding:56px 0 60px}
+  .story-grid{grid-template-columns:1fr}
+  .role-grid{grid-template-columns:repeat(2,1fr)}
+  .world-grid{grid-template-columns:1fr;gap:34px}
+  .related{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:28px}
+}
+@media (max-width:760px){
+  body{font-size:15.5px}
+  .main-nav{display:none}
+  .header-inner{gap:12px}
+  .header-cta{padding:8px 13px;font-size:12px}
+  .brand-text b{font-size:16px;letter-spacing:2px}
+  .section{padding:48px 0}
+  .role-grid{grid-template-columns:1fr}
+  .step{grid-template-columns:1fr;gap:10px}
+  .step-num{font-size:24px}
+  .footer-grid{grid-template-columns:1fr}
+  .hero h1{letter-spacing:2px}
+  .btn{width:100%;text-align:center}
+  .hero-actions{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">封</span>
+      <span class="brand-text">
+        <b>封神三部曲</b>
+        <span>SHEN FENG TRILOGY</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#story">剧情脉络</a>
+      <a href="#roles">角色图谱</a>
+      <a href="#world">世界观</a>
+      <a href="#guide">观影指南</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="header-cta" href="#guide">观影顺序推荐</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="hero-tag">中国神话史诗电影系列</span>
+        <h1>封神三部曲<br><em>一部关于天命、选择与代价的银幕长卷</em></h1>
+        <p class="hero-lead">
+          <strong>封神三部曲</strong>是以《封神演义》与宋元话本中的武王伐纣故事为蓝本，采用连续拍摄、分三部上映方式制作的中国神话史诗电影系列。它并非简单复述原著，而是围绕少年姬发与商王殷寿两条主线，重新组织“质子—君臣—父子—天下”的叙事重心。
+        </p>
+        <p class="hero-lead">
+          如果你第一次接触这个系列，最常问的三个问题是：三部曲分别讲了什么？故事之间如何衔接？应该按什么顺序看？本页把剧情脉络、人物关系、世界观设定与观影建议整理在一起，方便按需查阅。
+        </p>
+        <div class="hero-points">
+          <span>神话史诗题材</span>
+          <span>三部连续叙事</span>
+          <span>质子成长主线</span>
+          <span>东方美学视觉</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#story">从剧情脉络开始</a>
+          <a class="btn btn-ghost" href="#guide">查看观影顺序与建议</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="三部曲概览">
+        <h2>三部曲结构一览</h2>
+        <ul class="trilogy-list">
+          <li>
+            <span class="tl-num">壹</span>
+            <span class="tl-body">
+              <b>朝歌风云</b>
+              <span>质子旅入朝歌，殷寿登位，姬发在忠与义之间做出第一次抉择。</span>
+            </span>
+          </li>
+          <li>
+            <span class="tl-num">贰</span>
+            <span class="tl-body">
+              <b>战火西岐</b>
+              <span>殷商大军压境，西岐成为反抗的起点，仙凡两界的介入逐渐加深。</span>
+            </span>
+          </li>
+          <li>
+            <span class="tl-num">叁</span>
+            <span class="tl-body">
+              <b>封神天下</b>
+              <span>牧野决战与封神榜落定，各条人物线在此收束。</span>
+            </span>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ 剧情脉络 ============ -->
+  <section class="section" id="story">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">PLOT</div>
+        <h2>三部曲剧情脉络</h2>
+        <p>三部影片在时间线上前后相接，但每部各有独立的核心冲突。以下按上映顺序梳理每部的故事重心与关键转折，便于整体把握系列结构。</p>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-card">
+          <div class="part">第一部</div>
+          <h3>朝歌风云</h3>
+          <p>故事从质子旅说起。诸侯之子被送往朝歌充作质子，姬发即在其中。影片以殷寿的崛起与转变为核心，呈现一个原本被视为英雄的人物如何被权力与欲望重塑，而姬发则在这一过程中逐渐看清真相。</p>
+          <ul>
+            <li>核心冲突：忠诚与良知的撕裂</li>
+            <li>关键场景：龙德殿、冀州之战</li>
+            <li>情感落点：姬发与父亲姬昌的重逢与告别</li>
+          </ul>
+        </article>
+
+        <article class="story-card">
+          <div class="part">第二部</div>
+          <h3>战火西岐</h3>
+          <p>姬发返回西岐，殷商大军随之而来。这一部把战场从朝歌扩展到西岐，仙与凡的分界开始模糊：一边是人间军队的攻守，一边是修行者阵营的介入。姜子牙、杨戬、哪吒等角色的戏份明显加重。</p>
+          <ul>
+            <li>核心冲突：弱小方国如何面对强权征伐</li>
+            <li>关键场景：西岐城防战、法术交锋</li>
+            <li>情感落点：姬发从“归乡者”变成“承担者”</li>
+          </ul>
+        </article>
+
+        <article class="story-card">
+          <div class="part">第三部</div>
+          <h3>封神天下</h3>
+          <p>作为系列的收束之作，第三部把矛盾推向最终对决：人间战事与仙道纷争同时走向终点，封神榜的归属与意义被正式交代。多条人物线在此交汇，前期埋下的伏笔集中回收。</p>
+          <ul>
+            <li>核心冲突：天命与人为选择的最终对撞</li>
+            <li>关键场景：牧野决战、封神榜落定</li>
+            <li>情感落点：代价、牺牲与秩序重建</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 角色 ============ -->
+  <section class="section section-alt" id="roles">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">CHARACTERS</div>
+        <h2>主要角色与人物关系</h2>
+        <p>封神故事人物众多，电影系列做了明确的取舍与重组。下面列出贯穿三部曲的关键角色，以及他们在叙事中承担的功能。</p>
+      </div>
+
+      <div class="role-grid">
+        <article class="role-card">
+          <h3>姬发</h3>
+          <div class="role-sub">系列第一视角</div>
+          <p>质子出身，从朝歌的追随者成长为西岐的领袖。整个三部曲的情感线都围绕他的认知转变展开。</p>
+          <div class="role-key">关键词：成长、抉择、责任</div>
+        </article>
+
+        <article class="role-card">
+          <h3>殷寿</h3>
+          <div class="role-sub">商王 · 核心反派</div>
+          <p>并非脸谱化的暴君。影片着力刻画他如何从一个被认可的英雄走向失控，其转变构成第一部的主要张力。</p>
+          <div class="role-key">关键词：权力、欲望、自我说服</div>
+        </article>
+
+        <article class="role-card">
+          <h3>姬昌</h3>
+          <div class="role-sub">西伯侯</div>
+          <p>姬发之父。他的选择与遭遇，是姬发价值判断转变的直接推动力，也是“父子”主题的重要承载者。</p>
+          <div class="role-key">关键词：仁德、隐忍、传承</div>
+        </article>
+
+        <article class="role-card">
+          <h3>姜子牙</h3>
+          <div class="role-sub">昆仑修行者</div>
+          <p>连接仙凡两界的关键人物，手持封神榜下山。他的行动让神话层面的力量正式进入人间战局。</p>
+          <div class="role-key">关键词：使命、斡旋、规则</div>
+        </article>
+
+        <article class="role-card">
+          <h3>妲己</h3>
+          <div class="role-sub">关键女性角色</div>
+          <p>影片对其做了不同于传统刻板印象的处理，更多强调她与殷寿之间的关系张力，而非单薄的“祸水”符号。</p>
+          <div class="role-key">关键词：共生、欲望、非人视角</div>
+        </article>
+
+        <article class="role-card">
+          <h3>殷郊</h3>
+          <div class="role-sub">商王子</div>
+          <p>殷寿之子，与姬发情同手足。他的处境集中体现了“父与子”在权力结构中的撕裂。</p>
+          <div class="role-key">关键词：亲情、忠诚、悲剧性</div>
+        </article>
+
+        <article class="role-card">
+          <h3>杨戬 · 哪吒</h3>
+          <div class="role-sub">昆仑战力</div>
+          <p>在第二部之后戏份加重，承担仙术战斗与法术奇观的呈现，也是观众熟悉度较高的经典角色。</p>
+          <div class="role-key">关键词：法术、并肩、奇观</div>
+        </article>
+
+        <article class="role-card">
+          <h3>闻仲</h3>
+          <div class="role-sub">殷商重臣</div>
+          <p>作为商朝阵营的重要战力登场，代表旧秩序的顽强抵抗，其立场与结局构成系列后半段的重要看点。</p>
+          <div class="role-key">关键词：旧秩序、忠节、对抗</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 世界观 ============ -->
+  <section class="section" id="world">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">WORLDVIEW</div>
+        <h2>世界观设定与改编思路</h2>
+        <p>理解几个核心设定，能让观影体验顺畅很多。以下不是剧情剧透，而是帮助建立基本认知的背景说明。</p>
+      </div>
+
+      <div class="world-grid">
+        <div class="world-text">
+          <p>《封神演义》原著体量庞大，人物数以百计，情节枝蔓极多。影视化改编必然要做减法与重组。<strong>封神三部曲的处理方式，是把叙事重心从“群仙斗法”转向“人的选择”</strong>，用姬发的成长串联起仙凡两界的冲突。</p>
+          <p>因此，影片中的许多角色并非按原著逐一登场，而是被合并、提前或延后。对熟悉原著的观众来说，这需要一点心理预期调整；对不熟悉原著的观众来说，反而更容易跟上主线。</p>
+          <p>另一个显著特点是视觉体系。影片大量使用青铜器纹样、商周礼器造型与东方色调，试图构建一个既非纯历史、也非纯玄幻的银幕世界。这种“神话质感”是系列辨识度的重要来源。</p>
+          <p>需要说明的是，影片属于艺术创作，与真实商周历史存在明显区别。若有兴趣，可以把电影与《封神演义》原著、以及商周考古研究分开来看，各自获得不同的阅读乐趣。</p>
+        </div>
+
+        <ul class="concept-list">
+          <li>
+            <b>质子制度</b>
+            <span>诸侯之子入朝歌为质，是影片起点。它既是政治安排，也是人物关系的纽带，姬发与殷郊的情谊正源于此。</span>
+          </li>
+          <li>
+            <b>封神榜</b>
+            <span>系列的核心道具与设定。它关系到仙道秩序的重建，也牵动人间王朝的更替，是贯穿三部的关键线索。</span>
+          </li>
+          <li>
+            <b>仙凡两界</b>
+            <span>昆仑代表修行者一方，人间王朝代表世俗权力。两界从互不干涉到深度介入，构成系列后半段的推进动力。</span>
+          </li>
+          <li>
+            <b>天命与选择</b>
+            <span>影片反复追问：所谓天命，是注定，还是人为选择累积的结果？这是三部曲贯穿始终的主题母题。</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 观影指南 ============ -->
+  <section class="section section-alt" id="guide">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">GUIDE</div>
+        <h2>观影顺序与实用建议</h2>
+        <p>三部曲是连续叙事，顺序观看的体验最完整。以下建议适用于第一次接触该系列的观众。</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div>
+            <h3>按上映顺序观看，不要跳部</h3>
+            <p>三部曲的人物关系与伏笔是层层递进的。第一部建立人物与情感基础，第二部扩展战场与阵营，第三部集中收束。跳看会损失大量情感铺垫，尤其是姬发与殷郊、姬昌之间的线索。</p>
+            <span class="tip">建议：从第一部开始，按顺序看完</span>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-num">02</div>
+          <div>
+            <h3>观影前不必先读原著，但可以了解梗概</h3>
+            <p>影片对原著做了大幅改编，直接读原著反而可能造成预期偏差。更实用的做法是了解“武王伐纣”的基本背景，知道商周更替这一历史框架，再进入影片。</p>
+            <span class="tip">建议：了解背景即可，不必逐章对照</span>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-num">03</div>
+          <div>
+            <h3>留意人物的“选择时刻”</h3>
+            <p>这个系列真正的看点不在特效规模，而在关键节点上人物的抉择。姬发在龙德殿的选择、姬昌对儿子的态度、殷寿的每一次自我说服，都是理解主题的钥匙。</p>
+            <span class="tip">建议：关注对话与沉默，而不只是战斗场面</span>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-num">04</div>
+          <div>
+            <h3>对特效与神话场面保持合理预期</h3>
+            <p>影片包含大量法术、异兽与战争场面，视觉信息密集。大银幕观看更能体现其美术与场面设计；在移动设备上观看时，可适当调亮屏幕，以免暗部细节丢失。</p>
+            <span class="tip">建议：优先选择大屏与较暗的观影环境</span>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-num">05</div>
+          <div>
+            <h3>看完之后可以回看第一部</h3>
+            <p>系列中不少台词与镜头在第一部就已埋下，看完第三部再回看第一部，往往能发现此前忽略的呼应。这是连续叙事作品常见的二次观看价值。</p>
+            <span class="tip">建议：二刷从第一部开始</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">FAQ</div>
+        <h2>常见问题</h2>
+        <p>以下问题来自观众在了解这个系列时最常提出的疑问，回答尽量保持谨慎与准确。</p>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>封神三部曲一共有几部？分别叫什么？</summary>
+          <div class="faq-body">
+            该系列采用三部连续拍摄、分次上映的方式制作，三部依次为《朝歌风云》《战火西岐》《封神天下》。三部在时间线上前后相接，共同构成一个完整的故事弧。具体上映与发行信息请以官方发布为准。
+          </div>
+        </details>
+
+        <details>
+          <summary>没看过原著，能直接看懂电影吗？</summary>
+          <div class="faq-body">
+            可以。影片的叙事以姬发的视角展开，主线清晰，对不熟悉原著的观众相对友好。人物虽多，但核心关系集中在姬发、殷寿、姬昌、殷郊几人之间，跟随主线即可理解。若想更深入，再补充原著或历史背景也不迟。
+          </div>
+        </details>
+
+        <details>
+          <summary>三部曲和《封神演义》原著差别大吗？</summary>
+          <div class="faq-body">
+            差别比较明显。原著人物众多、情节枝蔓，影片做了大量合并与重排，并把叙事重心放在人物选择与父子关系上。可以把它理解为“以封神故事为素材的再创作”，而不是逐回改编。
+          </div>
+        </details>
+
+        <details>
+          <summary>电影里的故事是真实历史吗？</summary>
+          <div class="faq-body">
+            不是。商周更替在历史上确有其事，但影片中的法术、仙人、异兽等属于神话与文学创作范畴。若对真实历史感兴趣，建议查阅商周考古与先秦史相关研究，与影视作品区分看待。
+          </div>
+        </details>
+
+        <details>
+          <summary>适合什么年龄段的观众？</summary>
+          <div class="faq-body">
+            影片包含战争场面、打斗与部分紧张情节，整体偏向青少年及以上观众。年龄较小的孩子是否适合观看，建议家长先了解影片内容分级信息后再做判断。
+          </div>
+        </details>
+
+        <details>
+          <summary>在哪里可以观看？</summary>
+          <div class="faq-body">
+            影片的放映与上线渠道会随时间变化，通常包括院线、正版流媒体平台等。建议通过官方渠道或正规视频平台查询当前可观看方式，以获得完整的画质与音效体验。
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 延伸阅读 ============ -->
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">MORE</div>
+        <h2>相关延伸方向</h2>
+        <p>如果你已经看完三部曲，或想从其他角度理解这个故事，下面几个方向值得继续了解。</p>
+      </div>
+
+      <div class="related">
+        <a class="related-card" href="#world">
+          <h3>《封神演义》原著</h3>
+          <p>明代神魔小说的代表作，人物与情节远比影视改编庞杂。适合想追溯故事源流的读者，建议选择带注释的版本。</p>
+          <span class="more">了解背景 →</span>
+        </a>
+        <a class="related-card" href="#roles">
+          <h3>商周历史与考古</h3>
+          <p>真实的商周更替、青铜文明与礼制体系，与神话叙事互为参照。可作为区分“历史”与“创作”的阅读补充。</p>
+          <span class="more">延伸阅读 →</span>
+        </a>
+        <a class="related-card" href="#story">
+          <h3>中国神话史诗影视</h3>
+          <p>把封神系列放在更宽的脉络里看，可以观察中国神话题材影视在视觉体系与叙事方式上的探索路径。</p>
+          <span class="more">继续浏览 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <b>封神三部曲</b>
+        <p>一个围绕中国神话史诗电影系列整理的内容页面，聚焦剧情脉络、人物关系、世界观设定与观影建议，帮助观众更顺畅地进入这个故事。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#story">剧情脉络</a></li>
+          <li><a href="#roles">角色图谱</a></li>
+          <li><a href="#world">世界观设定</a></li>
+          <li><a href="#guide">观影指南</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>常见问题</h4>
+        <ul>
+          <li><a href="#faq">共有几部</a></li>
+          <li><a href="#faq">是否改编自原著</a></li>
+          <li><a href="#faq">观看顺序</a></li>
+          <li><a href="#faq">适龄建议</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>说明</h4>
+        <ul>
+          <li><a href="#world">历史与创作的区别</a></li>
+          <li><a href="#guide">观影环境建议</a></li>
+          <li><a href="#top">返回顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>本页内容为影视作品相关的资料性整理，具体信息以官方发布为准。</span>
+      <span>封神三部曲 · 观影参考页</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var details = document.querySelectorAll('.faq details');
+  details.forEach(function(item){
+    item.addEventListener('toggle', function(){
+      if(item.open){
+        details.forEach(function(other){
+          if(other !== item && other.open){ other.open = false; }
+        });
+      }
+    });
+  });
+
+  var links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(function(link){
+    link.addEventListener('click', function(e){
+      var id = link.getAttribute('href');
+      if(id.length > 1){
+        var target = document.querySelector(id);
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+  </html>
